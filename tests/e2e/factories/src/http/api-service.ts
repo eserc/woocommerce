@@ -82,7 +82,7 @@ export interface APIService {
 	 * Performs a DELETE request against the WordPress API.
 	 *
 	 * @param {string} endpoint The API endpoint we should query.
-	 * @param {*}      params Any parameters that should be passed in the request.
+	 * @param {*}      data Any parameters that should be passed in the request.
 	 * @return {Promise} Resolves to an APIResponse and rejects an APIError.
 	 */
 	delete<T>(
