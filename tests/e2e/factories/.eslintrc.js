@@ -15,6 +15,14 @@ module.exports = {
 		'plugin:@wordpress/eslint-plugin/recommended-with-formatting'
 	],
 	overrides: [
-		{ "files": [ '**/*.ts' ] }
+		{
+			'files': [ '**/*.ts' ]
+		},
+		{
+			'files': [ '**/*.spec.ts' ],
+			'rules': {
+				'no-console': 'off',
+			}
+		}
 	]
 }

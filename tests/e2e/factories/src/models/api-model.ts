@@ -5,7 +5,9 @@ export abstract class APIModel {
 	private _id: number = 0;
 
 	public constructor( partial?: Partial<APIModel> ) {
-		Object.assign( this, partial );
+		if ( partial ) {
+			Object.assign( this, partial );
+		}
 	}
 
 	public get id(): number {
